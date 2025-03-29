@@ -1,0 +1,103 @@
+/* Enhanced Login.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  width: 380px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.input-group {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #2980b9;
+  box-shadow: 0 0 0 3px rgba(41, 128, 185, 0.15);
+}
+
+.login-btn {
+  width: 100%;
+  background: #2980b9; /* Keeping the same button color */
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background 0.2s, transform 0.1s;
+  letter-spacing: 0.5px;
+}
+
+.login-btn:hover {
+  background: #3498db;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  padding: 8px;
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 6px;
+  border-left: 3px solid #e74c3c;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
